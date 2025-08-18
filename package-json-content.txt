@@ -1,0 +1,39 @@
+{
+  "name": "campaign-dashboard",
+  "version": "1.0.0",
+  "description": "Political campaign management dashboard",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup": "npm install && npx prisma generate && npx prisma db push && npx tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@prisma/client": "^6.14.0",
+    "prisma": "^6.14.0",
+    "@next-auth/prisma-adapter": "^1.0.7",
+    "next-auth": "^4.24.7",
+    "bcryptjs": "^2.4.3",
+    "@types/bcryptjs": "^2.4.6",
+    "date-fns": "^3.6.0",
+    "@heroicons/react": "^2.1.5",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.2.5",
+    "tsx": "^4.16.5",
+    "autoprefixer": "^10.4.16"
+  }
+}
